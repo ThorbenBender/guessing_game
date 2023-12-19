@@ -56,7 +56,7 @@ fn main() {
 
         let guess = match input.trim().parse::<u8>() {
             Ok(num) => num,
-            Err(e) => {
+            Err(_) => {
                 println!("Please input a correct number!!!");
                 continue;
             }
